@@ -8,6 +8,8 @@ import customtkinter as ctk
 from tkinter import filedialog, messagebox
 from PIL import Image
 import pygame
+import sys
+import tempfile
 
 # ---------- Directories ----------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -110,6 +112,9 @@ class QuickPremiere(ctk.CTk):
 
         # ---------- Splash Setup ----------
         pygame.mixer.init()
+
+        # Define temp folder specifically for splash sound and other assets
+        self.temp_dir = tempfile.mkdtemp()  # Create a temporary folder
         self.splash_sound_path = os.path.join(ASSETS_DIR, "splash.mp3")
 
         # ---------- Start ----------
@@ -127,6 +132,10 @@ class QuickPremiere(ctk.CTk):
         if os.path.exists(self.splash_sound_path) and not self.splash_disabled:
             pygame.mixer.music.load(self.splash_sound_path)
             pygame.mixer.music.play()
+
+    def stop_splash(self):
+        """Stop splash sound if it is playing."""
+        pygame.mixer.music.stop()
 
     # ---------- Premiere Path ----------
     def show_premiere_selection(self):
@@ -175,7 +184,7 @@ class QuickPremiere(ctk.CTk):
         ctk.CTkButton(frame, text="Browse Manually", fg_color=self.button_color, hover_color=self.button_hover, command=self.browse_premiere).grid(row=4, column=0, pady=(3, 3))
 
         # Footer
-        ctk.CTkLabel(frame, text="quickpremiere - v1.0", font=("Arial", 10, "italic"), text_color="gray").grid(row=5, column=0, pady=(20, 0))
+        ctk.CTkLabel(frame, text="quickpremiere - v1.0.1", font=("Arial", 10, "italic"), text_color="gray").grid(row=5, column=0, pady=(20, 0))
 
     def browse_premiere(self):
         file_path = filedialog.askopenfilename(
@@ -291,6 +300,8 @@ class QuickPremiere(ctk.CTk):
             subprocess.Popen([dest_project], shell=True)
         else:
             messagebox.showwarning("Warning", "Premiere did not stabilize in time. Please open the project manually.")
+
+        self.stop_splash()  # Stop splash sound when done
 
         self.destroy()
 
