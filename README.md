@@ -26,6 +26,7 @@ To build this on your own, do the following using Python 12.3:
 
 4. **Create the Project**
    - Click on "Create Project" to generate your new Premiere project file.
+     (Please be patient. It takes about 2-5 seconds for Premiere to open the file.)
 
 5. **Wait for Premiere to Open**
    - Premiere Pro will launch automatically, and the project file will be opened.
