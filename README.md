@@ -7,6 +7,7 @@ This program is essentially a Premiere Pro launcher designed to quickly create a
 
 ## Installation
 Installation files for Windows are provided in the releases tab. To build this on your own, do the following using Python 12.3:
+
 ```pip install -r requirements.txt```
 ``py quickpremiere.py``
 
