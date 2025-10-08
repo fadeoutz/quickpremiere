@@ -35,6 +35,11 @@ To build this on your own, do the following using Python 12.3:
 ## Notes
 - Only supported on Windows with Adobe Premiere 24.0.3+
 
+## Roadmap
+- "Use last preset and directory" option
+- Create a disposable project file
+- Other customizable paramaters
   
+
 
 *Created with hate and AI by @fadeoutz 💔*
