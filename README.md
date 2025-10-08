@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="assets/banner.png" width="520" height="150">
-</p>
+<img src="assets/banner.png" width="520" height="150">
 This program is essentially a Premiere Pro launcher designed to quickly create a project file without having to navigate through the hell of the Premiere Pro home screen.
 
 ## Features
