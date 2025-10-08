@@ -6,10 +6,11 @@ This program is essentially a Premiere Pro launcher designed to quickly create a
 - Automatically applies standard audio settings (48kHz, 24bit).
 
 ## Installation
-Installation files for Windows are provided in the [Releases tab](https://github.com/fadeoutz/quickpremiere/releases). 
+Installation files for Windows are provided in the [releases](https://github.com/fadeoutz/quickpremiere/releases) tab. 
 To build this on your own, do the following using Python 12.3:
 
 ```pip install -r requirements.txt```
+
 ``py quickpremiere.py``
 
 ## Notes
