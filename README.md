@@ -7,6 +7,7 @@ This program is a lightweight Premiere Pro launcher designed to quickly create a
 
 ## Installation
 Installation files for Windows are provided in the [releases](https://github.com/fadeoutz/quickpremiere/releases) tab. 
+
 To build this on your own, do the following using Python 12.3:
 
 ```pip install -r requirements.txt```
@@ -32,6 +33,7 @@ To build this on your own, do the following using Python 12.3:
 
 ## Notes
 - Only supported on Windows with Adobe Premiere 24.0.3+
+
   
-##
-Created with hate and AI by @fadeoutz 💔
+
+*Created with hate and AI by @fadeoutz 💔*
