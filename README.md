@@ -39,6 +39,7 @@ To build this on your own, do the following using Python 12.3:
 - "Use last preset and directory" option
 - Create a disposable project file
 - Other customizable paramaters
+- Mac support (Planned release for v1.3)
   
 
 
