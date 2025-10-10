@@ -43,4 +43,4 @@ To build this on your own, do the following using Python 12.3:
   
 
 
-*Created with hate and AI by @fadeoutz 💔*
+*Created with hate and lots of AI by @fadeoutz 💔*
